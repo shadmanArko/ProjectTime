@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using SandBox.Arko.TileMap_Experiment.Scripts;
 using Unity.Entities;
 using UnityEngine;
@@ -7,6 +8,7 @@ using Zenject;
 public class TileMapInstaller : ScriptableObjectInstaller<TileMapInstaller>
 {
     [SerializeField] private GameObject hexPrefab;
+    [SerializeField] private List<Material> materials;
     public override void InstallBindings()
     {
         Container.Bind<HexMap>().AsSingle();
