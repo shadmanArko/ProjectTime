@@ -9,9 +9,9 @@ public class TileMapInstaller : ScriptableObjectInstaller<TileMapInstaller>
     [SerializeField] private GameObject hexPrefab;
     public override void InstallBindings()
     {
-        Container.Bind<HexMap>().AsSingle();
-        Container.BindInstance(hexPrefab).WhenInjectedInto<HexMap>();
-        Container.BindInterfacesAndSelfTo<HexMapController>().AsSingle().NonLazy();
+        Container.Bind<TileMap>().AsSingle();
+        Container.BindInstance(hexPrefab).WhenInjectedInto<TileMap>();
+        Container.BindInterfacesAndSelfTo<TileMapController>().AsSingle().NonLazy();
     }
     
 }
