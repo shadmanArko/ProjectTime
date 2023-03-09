@@ -4,17 +4,17 @@ namespace SandBox.Arko.TileMap_Experiment.Scripts
 {
     public class TileMapController
     {
-        private readonly TileMap _tileMap;
+        private readonly TileMapGenerator _tileMapGenerator;
 
-        public TileMapController(TileMap tileMap)
+        public TileMapController(TileMapGenerator tileMapGenerator)
         {
-            _tileMap = tileMap;
+            _tileMapGenerator = tileMapGenerator;
         }
 
         [Inject]
         public void Initialize()
         {
-            _tileMap.GenerateMap();
+            _tileMapGenerator.GenerateMap();
         }
     }
 }

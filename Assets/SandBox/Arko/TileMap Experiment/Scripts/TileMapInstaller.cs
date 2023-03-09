@@ -7,12 +7,16 @@ using Zenject;
 [CreateAssetMenu(fileName = "TileMapInstaller", menuName = "Installers/TileMapInstaller")]
 public class TileMapInstaller : ScriptableObjectInstaller<TileMapInstaller>
 {
-    [SerializeField] private GameObject hexPrefab;
+    [SerializeField] private GameObject tilePrefab;
     [SerializeField] private List<Material> materials;
+    
     public override void InstallBindings()
     {
-        Container.Bind<TileMap>().AsSingle();
-        Container.BindInstance(hexPrefab).WhenInjectedInto<TileMap>();
+        Container.Bind<TileMapGenerator>().AsSingle();
+        Container.BindInstance(tilePrefab).WhenInjectedInto<TileMapGenerator>();
+        Container.Bind<List<Material>>().FromInstance(materials);
+        Container.Bind<TileFinder>().AsSingle();
+        
         Container.BindInterfacesAndSelfTo<TileMapController>().AsSingle().NonLazy();
     }
     

@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26b95af078c9364da2bd99b8c06c126, type: 3}
   m_Name: TileMapInstaller
   m_EditorClassIdentifier: 
-  hexPrefab: {fileID: 3502716213127904025, guid: 0f3a44c4fd2c3c24d814216d3754afe7,
+  tilePrefab: {fileID: 3502716213127904025, guid: 0f3a44c4fd2c3c24d814216d3754afe7,
     type: 3}
+  materials:
+  - {fileID: 2100000, guid: 766b57a3f5dc8074ab24ab343b0b2766, type: 2}
+  - {fileID: 2100000, guid: 2ac12a85b574c524fa5e2d20757a9c4b, type: 2}
+  - {fileID: 2100000, guid: 2bf5aa35f797f3144aad4d4499a7b6cb, type: 2}
+  - {fileID: 2100000, guid: a20f09c1c5dcb4649ba68d6ffd22cf53, type: 2}
