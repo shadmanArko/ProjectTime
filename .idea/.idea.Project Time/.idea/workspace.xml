@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64451f3-575c-457d-a6f1-b69e3fb94389" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/OutdoorsScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OutdoorsScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Time/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMap.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMapController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,19 +23,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "rider.run.widget.enabled.cache": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.2.9f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -68,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673251892788</updated>
       <workItem from="1673251901096" duration="648000" />
+      <workItem from="1678203598459" duration="1352000" />
     </task>
     <servers />
   </component>
@@ -77,6 +82,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
