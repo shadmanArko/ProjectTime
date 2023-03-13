@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,7 +21,14 @@ namespace SandBox.Arko.TileMap_Experiment.Scripts
 
         public Tile GetTile(int xPosition, int yPosition)
         {
-            return _tiles.FirstOrDefault(tile => tile.xPosition == xPosition && tile.yPosition == yPosition);
+            try
+            {
+                return _tiles.FirstOrDefault(tile => tile.xPosition == xPosition && tile.yPosition == yPosition);
+            }
+            catch (ArgumentNullException)
+            {
+                return null;
+            }
         }
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    public string name;
+    public string tileName;
     public int xPosition;
     public int yPosition;
+    public float elevation;
 }

@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64451f3-575c-457d-a6f1-b69e3fb94389" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/MaterialType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/MaterialType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/MeshType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/MeshType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileDataContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileDataContainer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Time/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMap.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/HexMapController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Prefabs/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Prefabs/Tile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scenes/TileMap Experiment.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scenes/TileMap Experiment.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/DataTesing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/DataTesing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileFinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileFinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapInstaller.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapInstaller.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +24,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/SandBox/Arko/TileMap Experiment/Scripts/TileMapGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2K562ZwTi4qK8JNK2L143BcE3En" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

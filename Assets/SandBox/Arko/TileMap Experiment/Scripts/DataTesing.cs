@@ -20,7 +20,7 @@ namespace SandBox.Arko.TileMap_Experiment.Scripts
         [ContextMenu("Get File Name")]
         public void GetTileName()
         {
-            Debug.Log(_tileFinder.GetTile(x, y).name);
+            Debug.Log(_tileFinder.GetTile(x, y).tileName);
         }
     }
 }

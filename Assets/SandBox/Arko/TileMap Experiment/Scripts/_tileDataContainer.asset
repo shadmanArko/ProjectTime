@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88eeb50e6a6d4aada5b65535b44c24fd, type: 3}
+  m_Name: _tileDataContainer
+  m_EditorClassIdentifier: 
+  meshWater: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  meshFlat: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  meshHill: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  meshMountain: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  matOcean: {fileID: 2100000, guid: 766b57a3f5dc8074ab24ab343b0b2766, type: 2}
+  matPlains: {fileID: 2100000, guid: 2ac12a85b574c524fa5e2d20757a9c4b, type: 2}
+  matGrassLands: {fileID: 2100000, guid: a20f09c1c5dcb4649ba68d6ffd22cf53, type: 2}
+  matMountains: {fileID: 2100000, guid: 2bf5aa35f797f3144aad4d4499a7b6cb, type: 2}

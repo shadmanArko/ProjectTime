@@ -14,7 +14,7 @@ namespace SandBox.Arko.TileMap_Experiment.Scripts
         [Inject]
         public void Initialize()
         {
-            _tileMapGenerator.GenerateMap();
+            _tileMapGenerator.GenerateContinentMap();
         }
     }
 }

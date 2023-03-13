@@ -8,13 +8,14 @@ using Zenject;
 public class TileMapInstaller : ScriptableObjectInstaller<TileMapInstaller>
 {
     [SerializeField] private GameObject tilePrefab;
-    [SerializeField] private List<Material> materials;
+    [SerializeField] private ScriptableObject tileDataContainer;
     
     public override void InstallBindings()
     {
         Container.Bind<TileMapGenerator>().AsSingle();
         Container.BindInstance(tilePrefab).WhenInjectedInto<TileMapGenerator>();
-        Container.Bind<List<Material>>().FromInstance(materials);
+        Container.Bind<TileDataContainer>().FromScriptableObject(tileDataContainer).AsSingle();
+        
         Container.Bind<TileFinder>().AsSingle();
         
         Container.BindInterfacesAndSelfTo<TileMapController>().AsSingle().NonLazy();
