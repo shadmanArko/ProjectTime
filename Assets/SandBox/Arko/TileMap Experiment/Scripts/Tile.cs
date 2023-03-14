@@ -8,4 +8,5 @@ public class Tile : MonoBehaviour
     public int xPosition;
     public int yPosition;
     public float elevation;
+    public float moisture;
 }

@@ -20,3 +20,4 @@ MonoBehaviour:
   matPlains: {fileID: 2100000, guid: 2ac12a85b574c524fa5e2d20757a9c4b, type: 2}
   matGrassLands: {fileID: 2100000, guid: a20f09c1c5dcb4649ba68d6ffd22cf53, type: 2}
   matMountains: {fileID: 2100000, guid: 2bf5aa35f797f3144aad4d4499a7b6cb, type: 2}
+  matDesert: {fileID: 2100000, guid: baa74dbb3728d0e45a3eafeb12ecf841, type: 2}

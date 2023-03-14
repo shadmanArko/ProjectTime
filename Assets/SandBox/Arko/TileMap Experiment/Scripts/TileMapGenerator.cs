@@ -20,8 +20,12 @@ public class TileMapGenerator
     public float heightMountain = 1.2f;
     public float heightHill = 0.6f;
     public float heightFlat = 0.0f;
-    
 
+    public float moistureJungle = 1f;
+    public float moistureForest = 0.8f;
+    public float moistureGrassLands = 0.33f;
+    public float moisturePlains = 0f;
+    
     public int numRows = 40;
     public int numColumns = 80;
     public int numContinents = 3;
@@ -84,21 +88,47 @@ public class TileMapGenerator
                 if (tile.elevation >= heightMountain)
                 {
                     mr.material = _tileDataContainer.GetTileMaterial(MaterialType.Mountains);
+                    mf.mesh = _tileDataContainer.GetTileMesh(MeshType.Mountain);
                 }
                 else if (tile.elevation >= heightHill)
                 {
                     mr.material = _tileDataContainer.GetTileMaterial(MaterialType.GrassLands);
+                    mf.mesh = _tileDataContainer.GetTileMesh(MeshType.Hill);
                 }
                 else if (tile.elevation >= heightFlat)
                 {
                     mr.material = _tileDataContainer.GetTileMaterial(MaterialType.Plains);
+                    mf.mesh = _tileDataContainer.GetTileMesh(MeshType.Flat);
                 }
                 else
                 {
                     mr.material = _tileDataContainer.GetTileMaterial(MaterialType.Ocean);
+                    mf.mesh = _tileDataContainer.GetTileMesh(MeshType.Water);
                 }
-                
-                mf.mesh = _tileDataContainer.GetTileMesh(MeshType.Water);
+
+                if (tile.elevation >= heightFlat)
+                {
+                    if (tile.moisture >= moistureJungle)
+                    {
+                        mr.material = _tileDataContainer.GetTileMaterial(MaterialType.GrassLands);
+                    }
+                    else if (tile.moisture >= moistureForest)
+                    {
+                        mr.material = _tileDataContainer.GetTileMaterial(MaterialType.GrassLands);
+                    }
+                    else if (tile.moisture >= moistureGrassLands)
+                    {
+                        mr.material = _tileDataContainer.GetTileMaterial(MaterialType.GrassLands);
+                    }
+                    else if (tile.moisture >= moisturePlains)
+                    {
+                        mr.material = _tileDataContainer.GetTileMaterial(MaterialType.Plains);
+                    }
+                    else
+                    {
+                        mr.material = _tileDataContainer.GetTileMaterial(MaterialType.Desert);
+                    }
+                }
             }
         }
     }
@@ -128,7 +158,7 @@ public class TileMapGenerator
             }
         }
         
-        //Add Perlin Noise
+        //Add Perlin Noise for tiles
         float noiseResolution = 0.05f; //smaller number make more cherabera 
         Vector2 noiseOffset = new Vector2(Random.Range(0f, 1f), Random.Range(0f, 1f));
         
@@ -141,6 +171,22 @@ public class TileMapGenerator
                 var perlinNoise = Mathf.PerlinNoise(((float)column / Mathf.Max(numColumns,numRows) / noiseResolution) + noiseOffset.x,
                     ((float)row / Mathf.Max(numColumns,numRows) / noiseResolution) + noiseOffset.y )- 0.5f;
                 tile.elevation += perlinNoise * noiseScale;
+            }
+        }
+        
+        //Add Perlin Noise for Moisture
+        noiseResolution = 0.05f; //smaller number make more cherabera 
+        noiseOffset = new Vector2(Random.Range(0f, 1f), Random.Range(0f, 1f));
+          
+        noiseScale = 2f; //Larger Value makes more Island
+        for (int column = 0; column < numColumns; column++)
+        {
+            for (int row = 0; row < numRows; row++)
+            {
+                var tile = _tileFinder.GetTile(column, row);
+                var perlinNoise = Mathf.PerlinNoise(((float)column / Mathf.Max(numColumns,numRows) / noiseResolution) + noiseOffset.x,
+                    ((float)row / Mathf.Max(numColumns,numRows) / noiseResolution) + noiseOffset.y )- 0.5f;
+                tile.moisture = perlinNoise * noiseScale;
             }
         }
 

@@ -17,6 +17,7 @@ namespace SandBox.Arko.TileMap_Experiment.Scripts
         [SerializeField] private Material matPlains;
         [SerializeField] private Material matGrassLands;
         [SerializeField] private Material matMountains;
+        [SerializeField] private Material matDesert;
 
         public Mesh GetTileMesh(MeshType meshType)
         {
@@ -47,6 +48,8 @@ namespace SandBox.Arko.TileMap_Experiment.Scripts
                     return matPlains;
                 case MaterialType.GrassLands:
                     return matGrassLands;
+                case MaterialType.Desert:
+                    return matDesert;
                 default:
                     return matPlains;
             }
