@@ -175,7 +175,7 @@ public class TileMapGenerator
         }
         
         //Add Perlin Noise for Moisture
-        noiseResolution = 0.05f; //smaller number make more cherabera 
+        noiseResolution = 0.001f; //smaller number make more cherabera 
         noiseOffset = new Vector2(Random.Range(0f, 1f), Random.Range(0f, 1f));
           
         noiseScale = 2f; //Larger Value makes more Island
